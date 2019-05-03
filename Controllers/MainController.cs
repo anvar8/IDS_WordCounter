@@ -1,12 +1,8 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using _5_2_2019.Data;
 using _5_2_2019.Models;
 using Microsoft.AspNetCore.Mvc;
-using WordCounterAPI.Data;
-using WordCounterAPI.Helpers;
+
 
 namespace _5_2_2019.Controllers
 {

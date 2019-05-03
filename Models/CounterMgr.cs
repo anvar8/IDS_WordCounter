@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using System.Text.RegularExpressions;
 using WordCounterAPI.Data;
 using WordCounterAPI.Helpers;
 
@@ -28,9 +28,54 @@ namespace _5_2_2019.Models
         }
 
         public void Count()
-        {           
-            this.srcFile.Count();
+        {
+            ExtractWords();
+            CountWords();
         }
+        public void CountWords()
+        {
+            //creates dictionary <string, int> to store words and their counts
+            foreach (var word in this.srcFile.Words)
+            {
+                if (!this.srcFile.WordCount.ContainsKey(word.ToString().Trim()))
+                {
+                    this.srcFile.WordCount.Add(word, 1);
+                }
+                else
+                {
+                    this.srcFile.WordCount[word] += 1;
+                }
+            }
+            Console.WriteLine(this.srcFile.WordCount);
+        }
+
+        public void ExtractWords()
+        {
+            //seed to test
+            //string [] ranWords = { "hello", "world", "is", "pretty" };
+            //for (var i=0; i< 100; i++)
+            //{
+            //    var rand = new Random();
+            //    var idx = rand.Next(0, ranWords.Length);
+            //    this.words.Add(ranWords[idx]);
+            //}
+
+            //note: returns false if file is reached, but permission denied.
+            if (!File.Exists(this.srcFile.FileUrl))
+            {
+                var text = System.IO.File.ReadAllText(this.srcFile.FileUrl);
+                //get rid of punctuation
+                text = Regex.Replace(text, @"[^\w\s]", "");
+                //turn into an array
+                this.srcFile.Words = new List<string>(text.Split(" "));
+
+            }
+            else
+            {
+                throw new Exception($"File not found at {this.srcFile.FileUrl}");
+            }
+        }
+
         public void SaveCountResult(IFileRepo repo)
         {
             this.SaveCountResultFile(this.srcFile.WordCount);
