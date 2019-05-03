@@ -1,0 +1,14 @@
+D:\Career\Career\IDS\5_2_2019\WordCounter\WordCounterAPI\bin\Debug\netcoreapp2.2\5_2_2019.deps.json
+D:\Career\Career\IDS\5_2_2019\WordCounter\WordCounterAPI\bin\Debug\netcoreapp2.2\5_2_2019.runtimeconfig.json
+D:\Career\Career\IDS\5_2_2019\WordCounter\WordCounterAPI\bin\Debug\netcoreapp2.2\5_2_2019.runtimeconfig.dev.json
+D:\Career\Career\IDS\5_2_2019\WordCounter\WordCounterAPI\bin\Debug\netcoreapp2.2\5_2_2019.dll
+D:\Career\Career\IDS\5_2_2019\WordCounter\WordCounterAPI\bin\Debug\netcoreapp2.2\5_2_2019.pdb
+D:\Career\Career\IDS\5_2_2019\WordCounter\WordCounterAPI\obj\Debug\netcoreapp2.2\5_2_2019.csproj.CoreCompileInputs.cache
+D:\Career\Career\IDS\5_2_2019\WordCounter\WordCounterAPI\obj\Debug\netcoreapp2.2\5_2_2019.RazorAssemblyInfo.cache
+D:\Career\Career\IDS\5_2_2019\WordCounter\WordCounterAPI\obj\Debug\netcoreapp2.2\5_2_2019.RazorAssemblyInfo.cs
+D:\Career\Career\IDS\5_2_2019\WordCounter\WordCounterAPI\obj\Debug\netcoreapp2.2\5_2_2019.AssemblyInfoInputs.cache
+D:\Career\Career\IDS\5_2_2019\WordCounter\WordCounterAPI\obj\Debug\netcoreapp2.2\5_2_2019.AssemblyInfo.cs
+D:\Career\Career\IDS\5_2_2019\WordCounter\WordCounterAPI\obj\Debug\netcoreapp2.2\5_2_2019.RazorTargetAssemblyInfo.cache
+D:\Career\Career\IDS\5_2_2019\WordCounter\WordCounterAPI\obj\Debug\netcoreapp2.2\5_2_2019.dll
+D:\Career\Career\IDS\5_2_2019\WordCounter\WordCounterAPI\obj\Debug\netcoreapp2.2\5_2_2019.pdb
+D:\Career\Career\IDS\5_2_2019\WordCounter\WordCounterAPI\obj\Debug\netcoreapp2.2\5_2_2019.csprojAssemblyReference.cache
